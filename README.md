@@ -1,7 +1,7 @@
 # :calendar: :memo:Third Party APIs Work Day Scheduler Challenge :memo: :calendar:
 
 ## Overview :book:
-For this challenge I was assigned to refactor a work day schedule.  Utilizing a Third Party Application Programming Interface (API), which features HTML, CSS, and JS powered by jQuery.
+For this challenge I was assigned to refactor a work day schedule.  Utilizing a Third Party Application Programming Interface (API), which features HTML & CSS powered by jQuery.
 
 
 ### User Story :notebook_with_decorative_cover:
@@ -33,7 +33,6 @@ THEN the saved events persist
 
 * Dynamically updated HTML
 * CSS
-* Javascript
 * jQuery
 * Local storage
 * Third Party API
@@ -60,7 +59,7 @@ The following image is a screenshot of the webpage:
 ### Languages
 * HTML
 * CSS
-* Javascript
+* jQuery
 
 
 ### Technology
