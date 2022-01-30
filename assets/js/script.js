@@ -3,9 +3,6 @@
  $("#currentDay").text(currentDay);
 
  $(document).ready(function () {   
-    
-    //displays current date
-    // $("#currentDay").text(moment().format("dddd, MMMM Do"));
    
     //defined the function
     function timeTracer(){
@@ -17,23 +14,16 @@
         $(".time-block").each(function() {
             // colors every time block 
             var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
-            //console.log( timeBlock, currentTime)
             
             //colors the time blocks as  present, past, & future.
             if (timeBlock === currentTime){
                 $(this).addClass("present");
-                $(this).removeClass("past");
-                $(this).removeClass("future");
             }
             else if (timeBlock < currentTime) {
                 $(this).addClass("past");
-                $(this).removeClass("present");
-                $(this).removeClass("future");
             }
             else {
                 $(this).addClass("future");
-                $(this).removeClass("past");
-                $(this).removeClass("present");
             }
         })
     }
@@ -50,14 +40,10 @@
             $("#hour16 .task-item").val(localStorage.getItem("hour16"));
             $("#hour17 .task-item").val(localStorage.getItem("hour17"));
 
-
       //saves the task by clicking the save button
       $(".saveBtn").on("click", function () {
-        // console.log(this); 
          let time = $(this).parent().attr("id");
-         let task = $(this).siblings(".task-item").val();
-         
- 
+         let task = $(this).siblings(".task-item").val();         
          //setting the time and task values in the local storage
          localStorage.setItem(time, task);
      })
