@@ -13,8 +13,7 @@
         // the time block changes color based on the current hour
         $(".time-block").each(function() {
             // colors every time block 
-            var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
-            
+            var timeBlock = parseInt($(this).attr("id").split("hour")[1]);          
             //colors the time blocks as  present, past, & future.
             if (timeBlock === currentTime){
                 $(this).addClass("present");
@@ -27,6 +26,7 @@
             }
         })
     }
+    
             //Retrieves the saved task from local Storage
             $("#hour7 .task-item").val(localStorage.getItem("hour7"));
             $("#hour8 .task-item").val(localStorage.getItem("hour8"));

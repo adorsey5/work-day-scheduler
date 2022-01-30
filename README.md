@@ -47,7 +47,7 @@ THEN the saved events persist
 
 Click the following link to visit the webpage:
 
-[A live link to the webpage](https://adorsey5.github.io/code-quiz/)
+[A live link to the webpage](https://adorsey5.github.io/work-day-scheduler/)
 
 
 The following image is a screenshot of the webpage:
